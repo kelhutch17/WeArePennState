@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeArePennState" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WE ARE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccq-su-VHT">
+                                <rect key="frame" x="242" y="33" width="117" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="FTb-BU-i3f"/>
+                                    <constraint firstAttribute="width" constant="224" id="HlY-Zk-eJR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FTb-BU-i3f"/>
+                                        <exclude reference="HlY-Zk-eJR"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PENN STATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrR-NR-Xf7">
+                                <rect key="frame" x="209" y="475" width="182" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="bHH-bQ-Pt6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bHH-bQ-Pt6"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtH-xP-JPo">
+                                <rect key="frame" x="197" y="490" width="206" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="3Rw-LC-d85"/>
+                                    <constraint firstAttribute="width" constant="206" id="h57-lN-GxQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="Chant!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Rw-LC-d85"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="chantButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aZ-od-Vvx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-2P-KVt">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="VLd-Cq-oIx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZtH-xP-JPo" firstAttribute="top" secondItem="rrR-NR-Xf7" secondAttribute="bottom" constant="19" id="Beb-tg-n4k"/>
+                            <constraint firstItem="rrR-NR-Xf7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cvs-gU-zXP"/>
+                            <constraint firstItem="ccq-su-VHT" firstAttribute="centerX" secondItem="Gum-2P-KVt" secondAttribute="centerX" id="Dvz-HD-sHO"/>
+                            <constraint firstItem="ZtH-xP-JPo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JYS-Gp-SCN"/>
+                            <constraint firstItem="Gum-2P-KVt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M30-Tr-oAp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZtH-xP-JPo" secondAttribute="bottom" constant="25" id="P74-bA-sSX"/>
+                            <constraint firstItem="rrR-NR-Xf7" firstAttribute="top" secondItem="Gum-2P-KVt" secondAttribute="bottom" constant="8" id="SGw-Ot-72o"/>
+                            <constraint firstItem="Gum-2P-KVt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f9v-Vd-Qac"/>
+                            <constraint firstItem="ccq-su-VHT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gHk-Fc-tna"/>
+                            <constraint firstItem="rrR-NR-Xf7" firstAttribute="centerX" secondItem="Gum-2P-KVt" secondAttribute="centerX" id="mcq-Ja-81o"/>
+                            <constraint firstItem="rrR-NR-Xf7" firstAttribute="top" secondItem="Gum-2P-KVt" secondAttribute="bottom" constant="25" id="nrM-hi-wzg"/>
+                            <constraint firstItem="ZtH-xP-JPo" firstAttribute="top" secondItem="rrR-NR-Xf7" secondAttribute="bottom" constant="-22" id="qdj-iw-yKb"/>
+                            <constraint firstItem="ccq-su-VHT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="uh5-uE-08V"/>
+                            <constraint firstItem="Gum-2P-KVt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="x7Q-oz-lbn"/>
+                            <constraint firstItem="ZtH-xP-JPo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xUk-YN-H0P"/>
+                            <constraint firstItem="Gum-2P-KVt" firstAttribute="top" secondItem="ccq-su-VHT" secondAttribute="bottom" constant="8" id="yMu-MV-xed"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gHk-Fc-tna"/>
+                                <exclude reference="yMu-MV-xed"/>
+                                <exclude reference="Cvs-gU-zXP"/>
+                                <exclude reference="SGw-Ot-72o"/>
+                                <exclude reference="Beb-tg-n4k"/>
+                                <exclude reference="xUk-YN-H0P"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="chantButton" destination="ZtH-xP-JPo" id="jO9-9z-wRp"/>
+                        <outlet property="lionImageView" destination="Gum-2P-KVt" id="M99-SQ-POo"/>
+                        <outlet property="pennStateLabel" destination="rrR-NR-Xf7" id="aYb-Gg-tmm"/>
+                        <outlet property="weAreLabel" destination="ccq-su-VHT" id="m6H-HE-Zui"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lion1.png" width="336" height="480"/>
+    </resources>
+</document>
